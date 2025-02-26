@@ -1,0 +1,2 @@
+INSERT INTO WORLDCUPMATCHES (Year, Datetime, Stage, Stadium, City, HomeTeamName, HomeTeamGoals, AwayTeamGoals, AwayTeamName, WinConditions, Attendance, HalfTimeHomeGoals, HalfTimeAwayGoals, Referee, Assistant1, Assistant2, RoundID, MatchID, HomeTeamInitials, AwayTeamInitials)
+VALUES (2030, '2030-06-25', 'Final', 'Maracanã Stadium', 'Rio de Janeiro', 'Brazil', 3, 2, 'Argentina', 'Brazil won', 95000, 2, 1, 'Maria Lopez', 'Juan Rodriguez', 'Luis Martinez', 1, 999, 'BRA', 'ARG');

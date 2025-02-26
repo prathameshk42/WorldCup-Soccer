@@ -1,0 +1,51 @@
+CREATE TABLE WorldCupMatches (
+    Year INT(4) UNSIGNED NOT NULL,
+    Datetime DATETIME NOT NULL,
+    Stage VARCHAR(50) NOT NULL,
+    Stadium VARCHAR(100) NOT NULL,
+    City VARCHAR(50) NOT NULL,
+    HomeTeamName VARCHAR(50) NOT NULL,
+    HomeTeamGoals INT,
+    AwayTeamGoals INT,
+    AwayTeamName VARCHAR(50) NOT NULL,
+    WinConditions VARCHAR(100),
+    Attendance INT,
+    HalfTimeHomeGoals INT,
+    HalfTimeAwayGoals INT,
+    Referee VARCHAR(50),
+    Assistant1 VARCHAR(50),
+    Assistant2 VARCHAR(50),
+    RoundID INT,
+    MatchID INT,
+    HomeTeamInitials VARCHAR(5),
+    AwayTeamInitials VARCHAR(5),
+    PRIMARY KEY (MatchID),
+    FOREIGN KEY (Year) REFERENCES WorldCups(Year)
+);
+
+CREATE TABLE WorldCupPlayers (
+    RoundID INT,
+    MatchID INT,
+    TeamInitials VARCHAR(5),
+    CoachName VARCHAR(50),
+    Lineup VARCHAR(5),
+    ShirtNumber INT,
+    PlayerName VARCHAR(100),
+    Position VARCHAR(50),
+    Event VARCHAR(40),
+    PRIMARY KEY (RoundID, MatchID, PlayerName),
+    FOREIGN KEY (MatchID) REFERENCES WORLDCUPMATCHES (MatchID)
+);
+
+Create table WorldCups (
+    Year INT(4) UNSIGNED NOT NULL,
+    Country VARCHAR(50) NOT NULL,
+    Winner VARCHAR(50) NOT NULL,
+    RunnersUp VARCHAR(50) NOT NULL,
+    Third VARCHAR(50) NOT NULL,
+    Fourth VARCHAR(50) NOT NULL,
+    GoalsScored INT,
+    QualifiedTeams INT,
+    MatchesPlayed INT,
+    Attendance INT,
+    PRIMARY KEY (Year));

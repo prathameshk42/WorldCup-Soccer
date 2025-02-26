@@ -1,0 +1,1 @@
+Delete from worldcupmatches where year=1974;

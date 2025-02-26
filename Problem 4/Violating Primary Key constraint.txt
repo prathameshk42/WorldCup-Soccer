@@ -1,0 +1,2 @@
+INSERT INTO WORLDCUPMATCHES (Year, Datetime, Stage, Stadium, City, HomeTeamName, HomeTeamGoals, AwayTeamGoals, AwayTeamName, WinConditions, Attendance, HalfTimeHomeGoals, HalfTimeAwayGoals, Referee, Assistant1, Assistant2, RoundID, MatchID, HomeTeamInitials, AwayTeamInitials)
+    -> VALUES (2022, '2022-07-15', 'Final', 'Wembley Stadium', 'London', 'England', 2, 1, 'Italy', 'England won', 82000, 1, 0, 'John Smith', 'Alice Johnson', 'Bob Brown', 1, 1, 'ENG', 'ITA');

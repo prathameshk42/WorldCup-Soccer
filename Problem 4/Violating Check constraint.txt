@@ -1,0 +1,2 @@
+INSERT INTO WORLDCUPMATCHES (Year, Datetime, Stage, Stadium, City, HomeTeamName, HomeTeamGoals, AwayTeamGoals, AwayTeamName, WinConditions, Attendance, HalfTimeHomeGoals, HalfTimeAwayGoals, Referee, Assistant1, Assistant2, RoundID, MatchID, HomeTeamInitials, AwayTeamInitials)
+VALUES (2018, '2018-06-20', 'Group Stage', 'Kazan Arena', 'Kazan', 'France', 11, 0, 'Peru', 'France won', 42000, 3, 0, 'Eduardo Silva', 'Maria Gonzales', 'Pedro Hernandez', 1, 1001, 'FRA', 'PER');
